@@ -1,0 +1,26 @@
+{
+  "name": "ng-boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "flect-miyake <akira.miyake@flect.co.jp>"
+  ],
+  "description": "Boilerplate of front-end application with AngularJS",
+  "keywords": [
+    "AngularJS",
+    "es6",
+    "gulp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-ui-router": "~0.2.15"
+  },
+  "devDependencies": {}
+}

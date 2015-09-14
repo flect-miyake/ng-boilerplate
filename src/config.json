@@ -1,0 +1,8 @@
+{
+  "development": {
+    "NG_ENV": "development"
+  },
+  "production": {
+    "NG_ENV": "production"
+  }
+}
