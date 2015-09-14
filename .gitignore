@@ -29,3 +29,6 @@ bower_components
 
 # Max OS X file system
 .DS_Store
+
+# Distribution directory
+dist
