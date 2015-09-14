@@ -15,8 +15,16 @@ gulp.task('stylesheets', function() {
   return gulp.src(config.src)
     .pipe(sourcemaps.init())
     .pipe(sass(sassConfig.options))
+    .pipe(sourcemaps.write({
+      includeContent: false,
+      sourceRoot: '.'
+    }))
     .on('error', handleErrors)
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(autoprefixer(autoprefixerConfig.options))
+    .pipe(sourcemaps.write({
+      includeContent: false,
+      sourceRoot: '.'
+    }))
     .pipe(gulp.dest(config.dest));
 });
